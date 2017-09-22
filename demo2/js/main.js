@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-=======
-/*
- * 自己的JS脚步
- * @Author: iceStone
- * @Date:   2015-12-12 10:59:26
- * @Last Modified by:   iceStone
- * @Last Modified time: 2015-12-13 15:19:19
- */
->>>>>>> 01351e942739a863c56e38d8d8910440d4ca9de2
 
 'use strict';
 
@@ -27,25 +17,8 @@ $(function() {
     $('#main_ad > .carousel-inner > .item').each(function(i, item) {
       // 因为拿到是DOM对象 需要转换
       var $item = $(item);
-      // var imgSrc = $item.data(isSmallScreen ? 'image-xs' : 'image-lg');
       var imgSrc =
         isSmallScreen ? $item.data('image-xs') : $item.data('image-lg');
-
-<<<<<<< HEAD
-=======
-      // jQuery方式
-      // $element.data()
-      // 是一个函数 ，专门用于取元素上的自定义属性（data-abc）
-      // 函数的参数是我们要取得属性名称（abc）
-      //
-      // $element.attr('data-abc')
-      //
-      // JS中的写法
-      // element.dataset['abc']
-      //
-      // element.getAttribute('data-abc')
-      // element.setAttribute('data-abc','')
->>>>>>> 01351e942739a863c56e38d8d8910440d4ca9de2
 
       // 设置背景图片
       $item.css('backgroundImage', 'url("' + imgSrc + '")');
@@ -58,12 +31,6 @@ $(function() {
       }
     });
   }
-<<<<<<< HEAD
-=======
-  // $(window).on('resize', resize);
-  // // 让window对象立即触发一下resize
-  // $(window).trigger('resize');
->>>>>>> 01351e942739a863c56e38d8d8910440d4ca9de2
 
 
   $(window).on('resize', resize).trigger('resize');
@@ -95,14 +62,6 @@ $(function() {
     if (distance > offset) {
       // 有方向变化
       // console.log(startX > endX ? '←' : '→');
-<<<<<<< HEAD
-      // 根据获得到的方向选择上一张或者下一张
-      //     - $('a').click();
-=======
-      // 2. 根据获得到的方向选择上一张或者下一张
-      //     - $('a').click();
-      //     - 原生的carousel方法实现 http://v3.bootcss.com/javascript/#carousel-methods
->>>>>>> 01351e942739a863c56e38d8d8910440d4ca9de2
       $(this).carousel(startX > endX ? 'next' : 'prev');
     }
   });
